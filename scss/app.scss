@@ -1,40 +1,37 @@
 @import "settings";
 @import "foundation";
 
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switch",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+@font-face {
+    font-family: 'Gz_Bold';
+    src: url('../fonts/GothamNarrow-Bold.otf');    
+}
+
+body, html {    
+    margin: 0;
+    padding: 0;    
+    
+}
+#header {
+.top-section {
+    background-color: #000000;
+    height: 110px;
+    width:100%;
+    line-height:110px;    
+    font-family:'Gz_Bold';
+    font-size:13px;
+    color:#FFFFFF;
+    .menu {
+         list-style-type: none;  
+         line-height:110px;    
+         vertical-align:middle;
+         li {
+         display: inline-block;
+         padding-right:35px;
+
+          a {
+            color:#FFFFFF;
+          }
+         }
+    }
+}
+}
