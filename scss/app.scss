@@ -11,6 +11,11 @@
     src: url('../fonts/GothamNarrow-Thin.otf');    
 }
 
+@font-face {
+    font-family: 'Gz_Book';
+    src: url('../fonts/Gotham-Book.otf');    
+}
+
 body, html {    
     margin: 0;
     padding: 0;    
@@ -41,7 +46,7 @@ body, html {
 }
 
 #main-content {
-    background-color:#E9E9E9;
+    background-color:#FFFFFF;
     #home-slider {
     .home-orbit {
         li {
@@ -89,7 +94,7 @@ body, html {
                 border:none;
             }
             .orbit-container .orbit-slides-container img {
-                height:100%;
+                
             }
 
             .orbit-container .orbit-slides-container > * .orbit-caption {
@@ -103,5 +108,89 @@ body, html {
                 right:12%;
             }
             
+    }
+    .portfolio-heading {
+        padding-top:50px;
+        padding-bottom:50px;
+        font-family:'Gz_Thin';
+        font-size:30px;
+    }
+    #home-bottom-slider {
+
+        .home-sub-orbit {
+           li {
+            
+           }
+           
+        }
+
+          .orbit-container .orbit-prev {
+            left:4%;
+            background: url('../img/slider-left.png')no-repeat; 
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+            height:84px;
+        }
+        .orbit-container .orbit-next {
+            right:4%;
+            background: url('../img/slider-right.png')no-repeat; 
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+            height:84px;
+        }
+
+            .orbit-container .orbit-prev:hover, .orbit-container .orbit-next:hover {
+                background-color:transparent;
+            }
+            .orbit-container .orbit-prev > span, .orbit-container .orbit-next > span {
+                border:none;
+            }
+            .orbit-container .orbit-slides-container img {
+             
+            }
+
+    }
+
+   #footer {
+        margin-top:50px;
+        background-color: #000000;   
+        width:100%;       
+        font-family:'Gz_Bold';
+        font-size:13px;
+        color:#FFFFFF;
+        height:210px;        
+        .return-top {
+            padding-top:40px;
+            padding-bottom:40px;
+            a {
+                font-family:'Gz_Bold';
+                font-size:14px;
+                color:#1a1a1a;
+            }
+        }
+        .footernav {
+            font-family:'Gz_Book';
+            font-size:10px;        
+            padding-bottom:40px;
+        .menu {            
+            list-style-type: none;         
+            text-align:center;
+            margin:0;
+            padding:0;
+            line-height: 1;
+         
+            li {
+                display: inline-block;
+                padding-right:12px;
+                a {
+                  color:#FFFFFF;
+                }
+            }
+        }
+    }
     }
 }
