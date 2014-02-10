@@ -21,33 +21,49 @@
     src: url('../fonts/AvenirNextLTPro-Regular.otf');    
 }
 
+@font-face {
+   font-family: 'Av_Bold';
+    src: url('../fonts/AvenirNextLTPro-Bold.otf');    
+
+}
+
+@font-face {
+   font-family: 'Av_Demi';
+    src: url('../fonts/AvenirNextLTPro-Demi.otf');    
+
+}
+
 body, html {    
     margin: 0;
     padding: 0;    
     
 }
 #header {
-.top-section {
-    background-color: #000000;   
-    width:100%;
-    line-height:110px;    
-    font-family:'Gz_Bold';
-    font-size:13px;
-    color:#FFFFFF;
-    .menu {
-         list-style-type: none;  
-         line-height:90px;    
-         vertical-align:middle;
-         li {
-         display: inline-block;
-         padding-right:35px;
-
-          a {
-            color:#FFFFFF;
+ background-color: #000000;   
+.header-content {
+    max-width: 980px;
+    margin: 0 auto;
+        .top-section {   
+            width:100%;
+            line-height:110px;    
             font-family:'Gz_Bold';
             font-size:13px;
-          }
-         }
+            color:#FFFFFF;
+            .menu {
+                 list-style-type: none;  
+                 line-height:90px;    
+                 vertical-align:middle;
+                 li {
+                 display: inline-block;
+                 padding-right:35px;
+
+                  a {
+                    color:#FFFFFF;
+                    font-family:'Gz_Bold';
+                    font-size:13px;
+                  }
+                 }
+            }
     }
 }
 }
@@ -215,6 +231,203 @@ body, html {
 
             }
         }
+    }
+
+    .contact {
+            padding-top:50px;
+            padding-bottom:110px;
+            text-align:right;
+            .contact-us {
+                margin-top:10px;         
+                text-align:center;
+                padding-left: 40px;
+                padding-right: 40px;
+                input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+                font-family: 'Av_Regular';
+                font-size:14px;
+                }
+            }
+             .heading {
+                min-width:250px;
+                padding:10px;
+               text-align:center;
+                background-color:#000000;
+                font-family:'Gz_Thin';
+                font-size:30px;
+                color:#FFFFFF;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                line-height: 1;
+                display:inline-block;               
+                margin-bottom:30px;
+            }
+
+            .contact-info-box {
+                border: solid 1px #dddddd;                                                           
+                text-align:left;
+                margin-top:10px;                
+                display: table;
+                .info-box {
+                display: table-cell;
+                vertical-align: middle;
+                height: 135px;
+                padding-left:20px;
+                padding-right:20px;
+                min-width:250px;  
+                .box-heading {
+                    font-family: 'Av_Bold';
+                    font-size:14px;
+                    padding-bottom:12px;
+                    line-height:1;
+                }
+                .box-content {
+                    font-family: 'Av_Regular';
+                    font-size:14px;
+                    line-height:1.5;
+                }
+            }
+            }
+    }
+    .lookbook {
+        padding-top:50px;
+        .heading {
+            padding:10px;
+            padding-left:30px;
+            padding-right:30px;
+            background-color:#000000;
+            font-family:'Gz_Thin';
+            font-size:30px;
+            color:#FFFFFF;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 1;
+            display:inline-block;
+        }
+        .look-btn {
+            width:165px;
+            border: solid 1px #dddddd;                                                           
+            padding-top:15px;
+            padding-bottom:15px;
+            font-family: 'Av_Regular';
+            font-size:14px;
+            text-align:center;
+            display:inline-block;
+        }
+        .activebtn {
+            background-color:#000000;
+            color:#FFFFFF;
+        }
+        
+        #lookbook-slider {
+        margin-top:50px;
+        margin-bottom:50px;
+        .home-sub-orbit {
+           li {
+            
+           }
+           
+        }
+
+          .orbit-container .orbit-prev {
+            left:4%;
+            background: url('../img/slider-left.png')no-repeat; 
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+            height:84px;
+        }
+        .orbit-container .orbit-next {
+            right:4%;
+            background: url('../img/slider-right.png')no-repeat; 
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+            background-size: contain;
+            height:84px;
+        }
+
+            .orbit-container .orbit-prev:hover, .orbit-container .orbit-next:hover {
+                background-color:transparent;
+            }
+            .orbit-container .orbit-prev > span, .orbit-container .orbit-next > span {
+                border:none;
+            }
+            .orbit-container .orbit-slides-container img {
+             
+        }            }
+    }
+
+    .stockist {
+         padding-top:50px;
+         padding-bottom:50px;
+         text-align:left;
+         
+         .contact-info-box {                
+                border: solid 1px #dddddd;                                                           
+                text-align:left;                             
+                display: table;
+                width:95%;
+                .info-box {
+                display: table-cell;
+                vertical-align: middle;
+                height: 135px;
+                padding-left:15px;
+                padding-right:15px;
+                margin-left:10px;
+                
+                min-width:150px;  
+                .box-heading {
+                    font-family: 'Av_Bold';
+                    font-size:14px;
+                    padding-bottom:12px;
+                    line-height:1;
+                }
+                .box-content {
+                    font-family: 'Av_Regular';
+                    font-size:14px;
+                    line-height:1.5;
+                }
+            }
+            }
+         .heading {
+            padding:5px;
+            padding-left:30px;
+            padding-right:30px;
+            background-color:#000000;
+            font-family:'Gz_Thin';
+            font-size:30px;
+            color:#FFFFFF;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 1;
+            display:inline-block;
+            margin-bottom:30px;
+        }
+        .stockist-list {
+             border: solid 1px #dddddd;                                                           
+             text-align:center;
+             padding:20px;
+            .stocklist-category , .departments-category , .retailers-category , .international-category {
+                 font-family: 'Av_Demi';
+                 font-size:14px;
+                 line-height:3;
+                 ul {                    
+                    list-style-type: none;         
+                    line-height:2;
+                    li {    
+                        font-family: 'Av_Regular';
+                        font-size:14px; 
+                        text-align:center;
+                    }
+                 }
+            }
+        }
+        
+    }
+    .blog-content {
+        max-width: 980px;margin: 0 auto;
+        border: solid thin red;
     }
 }
 #footer {     
