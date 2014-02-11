@@ -1,0 +1,5 @@
+html/bower_components/*
+html/.sass-cache/*
+html/*.DS_Store
+html/stylesheets/*
+/wp-config.php/
