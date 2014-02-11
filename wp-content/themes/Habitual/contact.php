@@ -19,7 +19,8 @@ if (have_posts()) :
     <section id="main-content">
         <?php
         while (have_posts()) : the_post();
-            //$num_of_slider_images = get_count_group('page_group_slider_image');
+            $num_of_text_section = get_count_group('page_group_short_text_title');
+            
             ?>
             <div class="contact">
                 <div class="row">
@@ -56,29 +57,7 @@ if (have_posts()) :
                     </div>
                     <div class="large-4 small-12 columns">
                         <div class="contact-us">
-                            <form>
-                                <div class="row collapse">
-                                    <div class="large-12 small-12 columns">
-                                        <input type="text" id="name" placeholder="Full Name">
-                                    </div>
-                                </div>
-                                <div class="row collapse">
-                                    <div class="large-12 small-12 columns">
-                                        <input type="email" id="name" placeholder="Email address">
-                                    </div>
-                                </div>
-                                <div class="row collapse">
-                                    <div class="large-12 small-12 columns">
-                                        <input type="text" id="phone" placeholder="Phone number">
-                                    </div>
-                                </div>
-                                <div class="row collapse">
-                                    <div class="large-12 small-12 columns">
-                                        <textarea id="description" rows="15" style="height: 125px">Questions or Inquiry?
-                                        </textarea>
-                                    </div>
-                                </div>
-                            </form>
+                           <?php the_content() ?>
                         </div>
 
                     </div>

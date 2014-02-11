@@ -154,7 +154,7 @@ body, html {
     #home-bottom-slider {
         margin-bottom:50px;
         .home-sub-orbit {
-            min-height:350px;
+            height:400px;
            li {
             
            }
@@ -588,6 +588,9 @@ body, html {
      font-size:13px;
      color:#FFFFFF;
      height:210px;        
+     .footer {
+      max-width:980px;
+      margin:0 auto;
      .return-top {
          padding-top:40px;
          padding-bottom:40px;
@@ -606,7 +609,8 @@ body, html {
          text-align:center;
          margin:0;
          padding:0;
-         line-height: 1;         
+         line-height: 1;     
+         margin-top:-5px;
          li {
              display: inline-block;
              padding-right:12px;
@@ -619,4 +623,5 @@ body, html {
          }
      }
  }
+}
  }
