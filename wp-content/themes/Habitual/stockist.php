@@ -1,41 +1,26 @@
-<!doctype html>
-<html class="no-js" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact</title>
-        <link rel="stylesheet" href="stylesheets/app.css" />
-        <script src="bower_components/modernizr/modernizr.js"></script>
-    </head>
-    <body>
-<header id="header">
-            <div class="header-content">
-                <div class="row collapse ">
-                    <div class="small-12 large-12 columns">
-                        <div class="top-section">
-                            <div class="row">
-                                <div class="small-4 large-4 columns">
-                                    <ul class="menu">
-                                        <li><a href="lookbook.html">Shop</a>  </li>
-                                        <li><a href="about.html">  About</a></li>
-                                    </ul>
-                                </div>
-                                <div class="small-4 large-4 text-center columns">
-                                    <img src="img/logo.png" alt="Logo" />
-                                </div>
-                                <div class=" small-4 large-4 columns text-right">
-                                    <ul class="menu2">
-                                        <li><a href="stockist.html">Stockist</a>  </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>           
-        </header>
-        <section id="main-content" >
+<?php
+/**
+ * The Stockist Page template file
+ *
+ * This is the Stockist template file in a Habitual theme
+ * and Used for the Stockist Page of the site
+ *
+ * Template Name: Stockist
+ * @package WordPress
+ * @subpackage Habitual
+ * @since Habitual
+ * @Developer Zohaib
+ * @Date 2014-02-11
+ */
+get_header();
+
+if (have_posts()) :
+    ?>
+    <section id="main-content">
+        <?php
+        while (have_posts()) : the_post();
+            //$num_of_slider_images = get_count_group('page_group_slider_image');
+            ?>
             <div class="stockist">
                 <div class="row">
                     <div class="large-12 small-12 columns">
@@ -301,37 +286,9 @@
                 </div>
 
             </div>
-        </section>
-        <footer id="footer">
-            <div class="row collapse">
-                <div class="large-12 small-12 columns text-center">
-                    <div class="return-top"><a href="#header">RETURN TO TOP</a></div>
-                </div>
-            </div>
-            <div class="row collapse footernav">
-                <div class="large-4 small-3 columns text-right">
-                    © 2014 Habitual. 
-                </div>
-                <div class="large-4 small-6 columns">
-                    <ul class="menu">
-                        <li><a href="#">Shop</a>  </li>
-                        <li><a href="#">  About</a></li>
-                        <li><a href="#">Stockist</a>  </li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="large-4 small-3 columns text-left">
-                    Credits
-                </div>
-            </div>
-            <div class="row collapse">
-                <div class="large-12 small-12 columns text-center">
-                    <img src="img/social.png" alt="Social Icons" />
-                </div>
-            </div>
-        </footer>
-        <script src="bower_components/jquery/jquery.js"></script>
-        <script src="bower_components/foundation/js/foundation.min.js"></script>
-        <script src="js/app.js"></script>
-    </body>
-</html>
+             <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+    </section>
+    <?php
+endif;
+?>
+<?php get_footer(); ?>
