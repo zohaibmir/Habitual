@@ -154,7 +154,7 @@ body, html {
     #home-bottom-slider {
         margin-bottom:50px;
         .home-sub-orbit {
-            height:400px;
+            min-height:600px;
            li {
             
            }
@@ -254,7 +254,19 @@ body, html {
             padding-bottom:110px;
             text-align:right;
             max-width:980px;
-            margin:0 auto;            
+            margin:0 auto;   
+            .wpcf7-textarea {
+                height:125px;
+            }
+             .wpcf7-submit{
+                border: none;
+                padding: 10px;
+                padding-right: 50px;
+                padding-left: 50px;
+                background-color: #000000;
+                color: #FFFFFF;
+                font-family: 'Av_Regular';
+             }
             .contact-us {
                 margin-top:10px;         
                 text-align:center;
@@ -303,6 +315,11 @@ body, html {
                     font-family: 'Av_Regular';
                     font-size:14px;
                     line-height:1.5;
+                    p {
+                    font-family: 'Av_Regular';
+                    font-size:14px;
+                    line-height:1.5;
+                    }
                 }
             }
             }
@@ -337,6 +354,7 @@ body, html {
             text-align:center;
             display:inline-block;
             margin-left:5px;
+            cursor:pointer;
         }
         .activebtn {
             background-color:#000000;
@@ -348,7 +366,7 @@ body, html {
         margin-bottom:50px;
         
         .lookbook-orbit {
-            min-height:350px;
+            min-height:600px;
            li {
             
            }

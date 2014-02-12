@@ -20,13 +20,12 @@ if (have_posts()) :
         <?php
         while (have_posts()) : the_post();
             $num_of_text_section = get_count_group('page_group_short_text_title');
-            
             ?>
             <div class="contact">
                 <div class="row">
                     <div class="large-12 small-12 columns">
                         <h1 class="heading">
-                            CONTACT US
+                            <?php the_title() ?>
                         </h1>
                     </div>
                 </div>
@@ -35,11 +34,10 @@ if (have_posts()) :
                         <div class="contact-info-box">
                             <div class="info-box">
                                 <div class="box-heading">
-                                    Corporate Office
+                                    <?php echo get('page_group_short_text_title', 1) ?>
                                 </div>
                                 <div class="box-content">
-                                    13344 S. Main St. Suite B<br />
-                                    Los Angeles, CA 90061
+                                    <?php echo get('page_group_short_text_description', 1) ?>
                                 </div>
                             </div>
                         </div>
@@ -47,17 +45,17 @@ if (have_posts()) :
                         <div class="contact-info-box">
                             <div class="info-box">
                                 <div class="box-heading">
-                                    PR/Media Inquiries
+                                    <?php echo get('page_group_short_text_title', 2) ?>
                                 </div>
                                 <div class="box-content">
-                                    press@habitual.com
+                                    <?php echo get('page_group_short_text_description', 2) ?>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="large-4 small-12 columns">
                         <div class="contact-us">
-                           <?php the_content() ?>
+                            <?php the_content() ?>
                         </div>
 
                     </div>
@@ -66,12 +64,10 @@ if (have_posts()) :
                         <div class="contact-info-box right">
                             <div class="info-box">
                                 <div class="box-heading">
-                                    West & East Coast
+                                    <?php echo get('page_group_short_text_title', 3) ?>
                                 </div>
                                 <div class="box-content">
-                                    OCEAN showroom <br />
-                                    Brigette Hassan <br />
-                                    brigette@oceanshowroom.com
+                                    <?php echo get('page_group_short_text_description', 3) ?>
                                 </div>
                             </div>
                         </div>
@@ -79,20 +75,18 @@ if (have_posts()) :
                         <div class="contact-info-box right">
                             <div class="info-box">
                                 <div class="box-heading">
-                                    Southwest & Midwest
+                                    <?php echo get('page_group_short_text_title', 4) ?>
                                 </div>
                                 <div class="box-content">
-
-                                    STYLELOUNGE showroom<br />
-                                    Tracy Holden<br />
-                                    stylelounge@verizon.net
+                                    <?php echo get('page_group_short_text_description', 4) ?>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-         <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+        <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
     </section>
     <?php
 endif;

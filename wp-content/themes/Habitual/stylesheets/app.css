@@ -7881,7 +7881,7 @@ body, html {
 }
 /* line 156, ../scss/app.scss */
 #main-content #home-bottom-slider .home-sub-orbit {
-  height: 400px;
+  min-height: 600px;
 }
 /* line 164, ../scss/app.scss */
 #main-content #home-bottom-slider .orbit-container .orbit-prev {
@@ -7977,18 +7977,32 @@ width:100%;*/
   margin: 0 auto;
 }
 /* line 258, ../scss/app.scss */
+#main-content .contact .wpcf7-textarea {
+  height: 125px;
+}
+/* line 261, ../scss/app.scss */
+#main-content .contact .wpcf7-submit {
+  border: none;
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Av_Regular';
+}
+/* line 270, ../scss/app.scss */
 #main-content .contact .contact-us {
   margin-top: 10px;
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 263, ../scss/app.scss */
+/* line 275, ../scss/app.scss */
 #main-content .contact .contact-us input[type="text"], #main-content .contact .contact-us input[type="password"], #main-content .contact .contact-us input[type="date"], #main-content .contact .contact-us input[type="datetime"], #main-content .contact .contact-us input[type="datetime-local"], #main-content .contact .contact-us input[type="month"], #main-content .contact .contact-us input[type="week"], #main-content .contact .contact-us input[type="email"], #main-content .contact .contact-us input[type="number"], #main-content .contact .contact-us input[type="search"], #main-content .contact .contact-us input[type="tel"], #main-content .contact .contact-us input[type="time"], #main-content .contact .contact-us input[type="url"], #main-content .contact .contact-us textarea {
   font-family: 'Av_Regular';
   font-size: 14px;
 }
-/* line 268, ../scss/app.scss */
+/* line 280, ../scss/app.scss */
 #main-content .contact .heading {
   min-width: 250px;
   padding: 10px;
@@ -8004,14 +8018,14 @@ width:100%;*/
   margin-bottom: 30px;
   float: left;
 }
-/* line 284, ../scss/app.scss */
+/* line 296, ../scss/app.scss */
 #main-content .contact .contact-info-box {
   border: solid 1px #dddddd;
   text-align: left;
   margin-top: 10px;
   display: table;
 }
-/* line 289, ../scss/app.scss */
+/* line 301, ../scss/app.scss */
 #main-content .contact .contact-info-box .info-box {
   display: table-cell;
   vertical-align: middle;
@@ -8020,29 +8034,35 @@ width:100%;*/
   padding-right: 20px;
   min-width: 250px;
 }
-/* line 296, ../scss/app.scss */
+/* line 308, ../scss/app.scss */
 #main-content .contact .contact-info-box .info-box .box-heading {
   font-family: 'Av_Bold';
   font-size: 14px;
   padding-bottom: 12px;
   line-height: 1;
 }
-/* line 302, ../scss/app.scss */
+/* line 314, ../scss/app.scss */
 #main-content .contact .contact-info-box .info-box .box-content {
   font-family: 'Av_Regular';
   font-size: 14px;
   line-height: 1.5;
 }
-/* line 310, ../scss/app.scss */
+/* line 318, ../scss/app.scss */
+#main-content .contact .contact-info-box .info-box .box-content p {
+  font-family: 'Av_Regular';
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* line 327, ../scss/app.scss */
 #main-content .lookbook {
   padding-top: 50px;
 }
-/* line 312, ../scss/app.scss */
+/* line 329, ../scss/app.scss */
 #main-content .lookbook .lookbook-top {
   max-width: 980px;
   margin: 0 auto;
 }
-/* line 316, ../scss/app.scss */
+/* line 333, ../scss/app.scss */
 #main-content .lookbook .heading {
   padding: 10px;
   padding-left: 30px;
@@ -8057,7 +8077,7 @@ width:100%;*/
   display: inline-block;
   float: left;
 }
-/* line 330, ../scss/app.scss */
+/* line 347, ../scss/app.scss */
 #main-content .lookbook .look-btn {
   width: 165px;
   border: solid 1px #dddddd;
@@ -8068,22 +8088,23 @@ width:100%;*/
   text-align: center;
   display: inline-block;
   margin-left: 5px;
+  cursor: pointer;
 }
-/* line 341, ../scss/app.scss */
+/* line 359, ../scss/app.scss */
 #main-content .lookbook .activebtn {
   background-color: #000000;
   color: #FFFFFF;
 }
-/* line 346, ../scss/app.scss */
+/* line 364, ../scss/app.scss */
 #main-content .lookbook #lookbook-slider {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 350, ../scss/app.scss */
+/* line 368, ../scss/app.scss */
 #main-content .lookbook #lookbook-slider .lookbook-orbit {
-  min-height: 350px;
+  min-height: 600px;
 }
-/* line 358, ../scss/app.scss */
+/* line 376, ../scss/app.scss */
 #main-content .lookbook #lookbook-slider .orbit-container .orbit-prev {
   left: 4%;
   background: url("../img/slider-left.png") no-repeat;
@@ -8093,7 +8114,7 @@ width:100%;*/
   background-size: contain;
   height: 84px;
 }
-/* line 367, ../scss/app.scss */
+/* line 385, ../scss/app.scss */
 #main-content .lookbook #lookbook-slider .orbit-container .orbit-next {
   right: 4%;
   background: url("../img/slider-right.png") no-repeat;
@@ -8103,15 +8124,15 @@ width:100%;*/
   background-size: contain;
   height: 84px;
 }
-/* line 377, ../scss/app.scss */
+/* line 395, ../scss/app.scss */
 #main-content .lookbook #lookbook-slider .orbit-container .orbit-prev:hover, #main-content .lookbook #lookbook-slider .orbit-container .orbit-next:hover {
   background-color: transparent;
 }
-/* line 380, ../scss/app.scss */
+/* line 398, ../scss/app.scss */
 #main-content .lookbook #lookbook-slider .orbit-container .orbit-prev > span, #main-content .lookbook #lookbook-slider .orbit-container .orbit-next > span {
   border: none;
 }
-/* line 388, ../scss/app.scss */
+/* line 406, ../scss/app.scss */
 #main-content .stockist {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -8119,7 +8140,7 @@ width:100%;*/
   max-width: 980px;
   margin: 0 auto;
 }
-/* line 394, ../scss/app.scss */
+/* line 412, ../scss/app.scss */
 #main-content .stockist .contact-info-box {
   border: solid 1px #dddddd;
   text-align: left;
@@ -8128,7 +8149,7 @@ width:100%;*/
   float: right;
   margin-left: 10px;
 }
-/* line 401, ../scss/app.scss */
+/* line 419, ../scss/app.scss */
 #main-content .stockist .contact-info-box .info-box {
   display: table-cell;
   vertical-align: middle;
@@ -8137,20 +8158,20 @@ width:100%;*/
   padding-right: 15px;
   min-width: 150px;
 }
-/* line 408, ../scss/app.scss */
+/* line 426, ../scss/app.scss */
 #main-content .stockist .contact-info-box .info-box .box-heading {
   font-family: 'Av_Bold';
   font-size: 14px;
   padding-bottom: 12px;
   line-height: 1;
 }
-/* line 414, ../scss/app.scss */
+/* line 432, ../scss/app.scss */
 #main-content .stockist .contact-info-box .info-box .box-content {
   font-family: 'Av_Regular';
   font-size: 14px;
   line-height: 1.5;
 }
-/* line 421, ../scss/app.scss */
+/* line 439, ../scss/app.scss */
 #main-content .stockist .heading {
   padding: 5px;
   padding-left: 30px;
@@ -8165,31 +8186,31 @@ width:100%;*/
   display: inline-block;
   margin-bottom: 30px;
 }
-/* line 435, ../scss/app.scss */
+/* line 453, ../scss/app.scss */
 #main-content .stockist .stockist-list {
   border: solid 1px #dddddd;
   text-align: center;
   padding: 20px;
   margin-right: 40px;
 }
-/* line 440, ../scss/app.scss */
+/* line 458, ../scss/app.scss */
 #main-content .stockist .stockist-list .stocklist-category, #main-content .stockist .stockist-list .departments-category, #main-content .stockist .stockist-list .retailers-category, #main-content .stockist .stockist-list .international-category {
   font-family: 'Av_Demi';
   font-size: 14px;
   line-height: 3;
 }
-/* line 444, ../scss/app.scss */
+/* line 462, ../scss/app.scss */
 #main-content .stockist .stockist-list .stocklist-category ul, #main-content .stockist .stockist-list .departments-category ul, #main-content .stockist .stockist-list .retailers-category ul, #main-content .stockist .stockist-list .international-category ul {
   list-style-type: none;
   line-height: 2;
 }
-/* line 447, ../scss/app.scss */
+/* line 465, ../scss/app.scss */
 #main-content .stockist .stockist-list .stocklist-category ul li, #main-content .stockist .stockist-list .departments-category ul li, #main-content .stockist .stockist-list .retailers-category ul li, #main-content .stockist .stockist-list .international-category ul li {
   font-family: 'Av_Regular';
   font-size: 14px;
   text-align: center;
 }
-/* line 457, ../scss/app.scss */
+/* line 475, ../scss/app.scss */
 #main-content .blog-socialmedia {
   background: url("../img/blog-social-bg.png") no-repeat;
   -webkit-background-size: cover;
@@ -8200,14 +8221,14 @@ width:100%;*/
   width: 100%;
   display: table;
 }
-/* line 466, ../scss/app.scss */
+/* line 484, ../scss/app.scss */
 #main-content .blog-socialmedia .social-content {
   max-width: 980px;
   margin: 0 auto;
   padding-top: 31.5px;
   height: 114px;
 }
-/* line 470, ../scss/app.scss */
+/* line 488, ../scss/app.scss */
 #main-content .blog-socialmedia .social-content .heading {
   padding: 10px;
   padding-left: 20px;
@@ -8222,67 +8243,67 @@ width:100%;*/
   line-height: 1;
   display: inline-block;
 }
-/* line 484, ../scss/app.scss */
+/* line 502, ../scss/app.scss */
 #main-content .blog-socialmedia .social-content .blog-socilicons {
   padding-top: 13px;
 }
-/* line 489, ../scss/app.scss */
+/* line 507, ../scss/app.scss */
 #main-content .blog-content {
   max-width: 980px;
   margin: 0 auto;
   margin-top: 50px;
 }
-/* line 492, ../scss/app.scss */
+/* line 510, ../scss/app.scss */
 #main-content .blog-content .blog-left-section {
   padding-right: 30px;
 }
-/* line 494, ../scss/app.scss */
+/* line 512, ../scss/app.scss */
 #main-content .blog-content .blog-left-section .search-field {
   height: 30px;
   padding: 0;
   maring: 0;
 }
-/* line 499, ../scss/app.scss */
+/* line 517, ../scss/app.scss */
 #main-content .blog-content .blog-left-section .postfix {
   height: 30px;
 }
-/* line 502, ../scss/app.scss */
+/* line 520, ../scss/app.scss */
 #main-content .blog-content .blog-left-section .categories-list, #main-content .blog-content .blog-left-section .recent-posts, #main-content .blog-content .blog-left-section .archives-list {
   font-family: 'Av_Bold';
   font-size: 14px;
   text-align: left;
   margin-top: 30px;
 }
-/* line 507, ../scss/app.scss */
+/* line 525, ../scss/app.scss */
 #main-content .blog-content .blog-left-section .categories-list ul, #main-content .blog-content .blog-left-section .recent-posts ul, #main-content .blog-content .blog-left-section .archives-list ul {
   padding-top: 10px;
   list-style-type: none;
   line-height: 1.5;
   margin: 0;
 }
-/* line 512, ../scss/app.scss */
+/* line 530, ../scss/app.scss */
 #main-content .blog-content .blog-left-section .categories-list ul li, #main-content .blog-content .blog-left-section .recent-posts ul li, #main-content .blog-content .blog-left-section .archives-list ul li {
   font-family: 'Av_Regular';
   font-size: 12px;
   text-align: left;
   color: #333333;
 }
-/* line 517, ../scss/app.scss */
+/* line 535, ../scss/app.scss */
 #main-content .blog-content .blog-left-section .categories-list ul li a, #main-content .blog-content .blog-left-section .recent-posts ul li a, #main-content .blog-content .blog-left-section .archives-list ul li a {
   font-family: 'Av_Regular';
   font-size: 12px;
   text-align: left;
   color: #333333;
 }
-/* line 522, ../scss/app.scss */
+/* line 540, ../scss/app.scss */
 #main-content .blog-content .blog-left-section .categories-list ul li a span, #main-content .blog-content .blog-left-section .recent-posts ul li a span, #main-content .blog-content .blog-left-section .archives-list ul li a span {
   color: #aaaaaa;
 }
-/* line 531, ../scss/app.scss */
+/* line 549, ../scss/app.scss */
 #main-content .blog-content .blog-right-section {
   margin-left: 20px;
 }
-/* line 533, ../scss/app.scss */
+/* line 551, ../scss/app.scss */
 #main-content .blog-content .blog-right-section .heading {
   padding: 10px;
   padding-left: 20px;
@@ -8298,7 +8319,7 @@ width:100%;*/
   display: inline-block;
   margin: 0;
 }
-/* line 548, ../scss/app.scss */
+/* line 566, ../scss/app.scss */
 #main-content .blog-content .blog-right-section .posting-date {
   font-size: 12px;
   font-family: 'Av_Regular';
@@ -8306,7 +8327,7 @@ width:100%;*/
   padding-bottom: 20px;
   margin: 0;
 }
-/* line 555, ../scss/app.scss */
+/* line 573, ../scss/app.scss */
 #main-content .blog-content .blog-right-section p {
   font-size: 14px;
   font-family: 'Av_Regular';
@@ -8314,29 +8335,29 @@ width:100%;*/
   margin: 0;
   padding-bottom: 20px;
 }
-/* line 562, ../scss/app.scss */
+/* line 580, ../scss/app.scss */
 #main-content .blog-content .blog-right-section ul.pagination {
   display: inline-block;
 }
-/* line 565, ../scss/app.scss */
+/* line 583, ../scss/app.scss */
 #main-content .blog-content .blog-right-section ul.pagination li a {
   font-size: 14px;
   font-family: 'Av_Regular';
   color: #000000;
 }
-/* line 570, ../scss/app.scss */
+/* line 588, ../scss/app.scss */
 #main-content .blog-content .blog-right-section ul.pagination li.current a {
   font-size: 14px;
   font-family: 'Av_Regular';
   color: #FFFFFF;
   background-color: #000000;
 }
-/* line 576, ../scss/app.scss */
+/* line 594, ../scss/app.scss */
 #main-content .blog-content .blog-right-section ul.pagination li.current a:hover, #main-content .blog-content .blog-right-section ul.pagination li.current a:focus {
   background-color: #000000;
 }
 
-/* line 584, ../scss/app.scss */
+/* line 602, ../scss/app.scss */
 #footer {
   background-color: #000000;
   width: 100%;
@@ -8345,29 +8366,29 @@ width:100%;*/
   color: #FFFFFF;
   height: 210px;
 }
-/* line 591, ../scss/app.scss */
+/* line 609, ../scss/app.scss */
 #footer .footer {
   max-width: 980px;
   margin: 0 auto;
 }
-/* line 594, ../scss/app.scss */
+/* line 612, ../scss/app.scss */
 #footer .footer .return-top {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* line 597, ../scss/app.scss */
+/* line 615, ../scss/app.scss */
 #footer .footer .return-top a {
   font-family: 'Gz_Bold';
   font-size: 14px;
   color: #1a1a1a;
 }
-/* line 603, ../scss/app.scss */
+/* line 621, ../scss/app.scss */
 #footer .footer .footernav {
   font-family: 'Gz_Book';
   font-size: 10px;
   padding-bottom: 40px;
 }
-/* line 607, ../scss/app.scss */
+/* line 625, ../scss/app.scss */
 #footer .footer .footernav .menu {
   list-style-type: none;
   text-align: center;
@@ -8376,13 +8397,13 @@ width:100%;*/
   line-height: 1;
   margin-top: -5px;
 }
-/* line 614, ../scss/app.scss */
+/* line 632, ../scss/app.scss */
 #footer .footer .footernav .menu li {
   display: inline-block;
   padding-right: 12px;
   line-height: 1;
 }
-/* line 618, ../scss/app.scss */
+/* line 636, ../scss/app.scss */
 #footer .footer .footernav .menu li a {
   font-family: 'Gz_Book';
   font-size: 10px;
