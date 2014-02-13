@@ -1,5 +1,4 @@
 <?php
-
 get_header();
 
 if (have_posts()) :
@@ -11,29 +10,19 @@ if (have_posts()) :
             ?>
             <div class="about">
                 <div class="row collapse">
-                    <div class="large-3 small-3 columns">
-                        <div class="about-left-section">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/about-left.png" />
-                        </div>
-                    </div>
-                    <div class="large-9 small-9 columns">
-                        <div class="about-content">
-                            <h1 class="about-heading">
-                                About Habitual
-                            </h1>
-                            <div class="about-text">
-                                <p>
-                                    Founded in 2001, HABITUAL emerged as a top leader in the premium denim market. Widely embraced by celebrities, fashion editors and style mavens, it’s impeccable fit and forward designs gained worldwide recognition instantly.
-                                </p>
-                                <p>
-                                    We draw our inspiration from New York and Los Angeles combining a bicoastal sensibility to the brand. Every piece is expertly cut, sewn and washed in Los Angeles, California by skilled artisans.
-                                </p>
-                                <p>
-                                    Always on trend but never trendy, we celebrate personal style and inner confidence. When something is a perfect fit, feels right and looks so good, it becomes habitual. Let HABITUAL become your next unbreakable habit.
 
-                                </p>
+                    <div class="large-12 small-12 columns">
+                        <div class="about-content" style="padding-top: 30px;">
+                            <h1 class="about-heading">
+                                <?php the_title() ?>
+                            </h1>
+                            <p style="padding-top: 30px;"><?php the_post_thumbnail() ?></p>
+                            <div class="about-text" style="max-width: 100%;padding: 0;border: none">
+                                <?php the_content() ?>
+                                <?php comments_template('', true); ?>
                             </div>
                         </div>
+
                     </div>
                     <!--div class="large-3 small-3 columns">
                         <div class="about-right-section">
@@ -42,6 +31,7 @@ if (have_posts()) :
                     </div-->
                 </div>
             </div> 
+
         <?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
     </section>
     <?php

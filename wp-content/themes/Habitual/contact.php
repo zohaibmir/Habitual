@@ -30,7 +30,7 @@ if (have_posts()) :
                     </div>
                 </div>
                 <div class="row">
-                    <div class="large-4 small-12 columns">                   
+                    <div class="large-4 medium-4 small-12 columns">                   
                         <div class="contact-info-box">
                             <div class="info-box">
                                 <div class="box-heading">
@@ -53,13 +53,13 @@ if (have_posts()) :
                             </div>
                         </div>
                     </div>
-                    <div class="large-4 small-12 columns">
+                    <div class="large-4 medium-4 small-12 columns">
                         <div class="contact-us">
                             <?php the_content() ?>
                         </div>
 
                     </div>
-                    <div class="large-4 small-12 columns">
+                    <div class="large-4 medium-4 small-12 columns">
 
                         <div class="contact-info-box right">
                             <div class="info-box">

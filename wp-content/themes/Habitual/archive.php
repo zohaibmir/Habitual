@@ -1,22 +1,24 @@
 <?php
 /**
- * The main template file
+ * The template for displaying Archive pages
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * For example, it puts together the home page when no home.php file exists.
+ * Used to display archive-type pages if nothing more specific matches a query.
+ * For example, puts together date-based pages if no date.php file exists.
  *
+ * If you'd like to further customize these archive views, you may create a
+ * new template file for each specific one. For example, Twenty Twelve already
+ * has tag.php for Tag archives, category.php for Category archives, and
+ * author.php for Author archives.
+ *
+ * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Habitual
- * @since Habitual
- * @Developer Zohaib
- * @Date 2014-02-11
+ * @subpackage Twenty_Twelve
+ * @since Twenty Twelve 1.0
  */
 get_header();
 
-if (have_posts()) : query_posts("cat=6" . '&paged=' . $paged);
+if (have_posts()) :
     ?>
     <section id="main-content">
 
@@ -49,13 +51,13 @@ if (have_posts()) : query_posts("cat=6" . '&paged=' . $paged);
                     <div class="blog-left-section">
                         <form role="search" method="get" id="searchform" action="" >
                             <div class="row collapse">
-                                <div class="small-12 columns searchwrapper">
+                                 <div class="small-12 columns searchwrapper">
                                     <input type="text" id="search" class="search-field" placeholder="" />
-                                </div>                                
+                                </div>       
                             </div>
                         </form>
                         <div class="row collapse">
-                            <div class="large-12 medium-12 small-12 columns">
+                            <div class="large-12 small-12 columns">
 
                                 <div class="categories-list">
                                     <?php dynamic_sidebar('sidebar2'); ?>
@@ -76,6 +78,26 @@ if (have_posts()) : query_posts("cat=6" . '&paged=' . $paged);
                 </div>
                 <div class="large-9 medium-9 small-8 columns">
                     <div class="blog-right-section">
+                        <div class="row">
+                            <div class="large-12 small-12 columns">
+                                <header class="archive-header">
+                                    <h1 class="heading"> 
+                                        <?php
+                                        if (is_day()) :
+                                            printf(__('Daily Archives: %s', 'twentytwelve'), '<span>' . get_the_date() . '</span>');
+                                        elseif (is_month()) :
+                                            printf(__('Monthly Archives: %s', 'twentytwelve'), '<span>' . get_the_date(_x('F Y', 'monthly archives date format', 'twentytwelve')) . '</span>');
+                                        elseif (is_year()) :
+                                            printf(__('Yearly Archives: %s', 'twentytwelve'), '<span>' . get_the_date(_x('Y', 'yearly archives date format', 'twentytwelve')) . '</span>');
+                                        else :
+                                            _e('Archives', 'twentytwelve');
+                                        endif;
+                                        ?>
+                                    </h1>
+                                </header>
+                            </div>
+                        </div>
+                        <br /><br />
                         <?php
                         while (have_posts()) : the_post();
                             //$num_of_slider_images = get_count_group('page_group_slider_image');
@@ -97,7 +119,7 @@ if (have_posts()) : query_posts("cat=6" . '&paged=' . $paged);
                                     <?php if (comments_open()) : ?>
                                         <p><?php comments_popup_link('Post a comment!'); ?></p>
 
-                                    <?php endif; // comments_open() ?>
+                                    <?php endif; // comments_open()   ?>
                                 </div>
                             </div>
 
