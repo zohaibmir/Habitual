@@ -4,7 +4,7 @@
             <div class="small-3 columns show-for-small-only text-left copyright">
                 © 2014 Habitual. 
             </div>
-            <div class="large-12 small-6 columns text-center">
+            <div class="large-12 medium-12 small-6 columns text-center">
                 <div class="return-top"><a href="#header">RETURN TO TOP</a></div>
             </div>
             <div class="small-3 columns show-for-small-only text-right credits copyright">
