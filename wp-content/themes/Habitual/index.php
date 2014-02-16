@@ -32,10 +32,31 @@ if (have_posts()) : query_posts("cat=6" . '&paged=' . $paged);
                             </div>
                             <div class="large-6 small-6 columns text-right">
                                 <div class="blog-socilicons">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/fb-blog.png" />
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/twitter-blog.png" />
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/print-blog.png" />
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/mail-blog.png" />
+                                    <div class="fb1-click" style="display: inline;position: relative">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/fb-blog.png" />
+                                        <div class="fb-blog-hover" style=" display: none">                        
+                                            <iframe style="border: none; overflow: hidden; height: 290px;" src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FYanHuangme&amp;width&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=212010222162676" height="240" width="320" frameborder="0" scrolling="no"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div class="tw-click" style="display: inline;position: relative">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/twitter-blog.png" />
+                                        <div class="tw-bottom-hover" style="display: none">
+                                            <p>Follow me on Twitter!<br>
+                                                <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fyanhuangme.com%2F&amp;region=follow_link&amp;screen_name=YanHuangME&amp;tw_p=followbutton&amp;variant=2.0" target="_blank"><img src="http://yanhuangme.com/wp-content/uploads/2013/06/twitter.jpg" alt="twitter" width="144" height="20" class="alignnone size-full wp-image-1800"></a></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="print-link" style="display: inline;position: relative">
+                                        <?php dynamic_sidebar('sidebar6'); ?>
+                                    </div>
+                                    <div class="news-letter" style="display: inline;position: relative">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/mail-blog.png" />
+                                        <div class="news-letter-content" style="display: none">
+                                            <?php dynamic_sidebar('sidebar7'); ?>
+                                        </div>
+                                    </div>    
                                 </div>
                             </div>
                         </div>

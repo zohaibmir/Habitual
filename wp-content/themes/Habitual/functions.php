@@ -53,7 +53,7 @@ function habitual_register_sidebars() {
         'before_title' => '',
         'after_title' => '',
     ));
-    
+
     register_sidebar(array(
         'id' => 'sidebar4',
         'name' => 'Archives',
@@ -63,6 +63,46 @@ function habitual_register_sidebars() {
         'before_title' => '',
         'after_title' => '',
     ));
+
+    register_sidebar(array(
+        'id' => 'sidebar4',
+        'name' => 'Archives',
+        'description' => '',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+
+    register_sidebar(array(
+        'id' => 'sidebar5',
+        'name' => 'pin',
+        'description' => '',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+    register_sidebar(array(
+        'id' => 'sidebar6',
+        'name' => 'pinblog',
+        'description' => '',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+    
+    register_sidebar(array(
+        'id' => 'sidebar7',
+        'name' => 'newsletter',
+        'description' => '',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+    
     /*
       to add more sidebars or widgetized areas, just copy
       and edit the above sidebar code. In order to call
@@ -241,29 +281,28 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 }
 
 function paginate() {
-	global $wp_query, $wp_rewrite;
-	$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
-	
-	$pagination = array(
-		'base' => @add_query_arg('paged','%#%'),
-		'format' => '',
-		'total' => $wp_query->max_num_pages,
-		'current' => $current,
-		'show_all' => true,
-		'type' => 'list',
-		'next_text' => 'Next',
-		'prev_text' => 'Previous'
-		);
-	
-	if( $wp_rewrite->using_permalinks() )
-		$pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
-	
-	if( !empty($wp_query->query_vars['s']) )
-		$pagination['add_args'] = array( 's' => get_query_var( 's' ) );
-	
-	echo paginate_links( $pagination );
-}
+    global $wp_query, $wp_rewrite;
+    $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
 
+    $pagination = array(
+        'base' => @add_query_arg('paged', '%#%'),
+        'format' => '',
+        'total' => $wp_query->max_num_pages,
+        'current' => $current,
+        'show_all' => true,
+        'type' => 'list',
+        'next_text' => 'Next',
+        'prev_text' => 'Previous'
+    );
+
+    if ($wp_rewrite->using_permalinks())
+        $pagination['base'] = user_trailingslashit(trailingslashit(remove_query_arg('s', get_pagenum_link(1))) . 'page/%#%/', 'paged');
+
+    if (!empty($wp_query->query_vars['s']))
+        $pagination['add_args'] = array('s' => get_query_var('s'));
+
+    echo paginate_links($pagination);
+}
 
 if (!function_exists('twentytwelve_comment')) :
 

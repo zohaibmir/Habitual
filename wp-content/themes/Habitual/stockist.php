@@ -118,7 +118,7 @@ if (have_posts()) :;
                 </div>
 
                 <div class="large-8 medium-8 small-7 columns">
-                    <div class="row">                           
+                    <div class="row" data-equalize>                           
                         <?php
                         $count = 1;
                         $countlistings = 1;
@@ -147,7 +147,7 @@ if (have_posts()) :;
                             $num_of_listings = get_count_group('post_group_listings_name');
                             for ($i = 1; $i <= $num_of_listings; $i++) {
                                 ?>
-                                <div class="large-4 medium-4 small-12 columns listings parent<?php echo $category_parent ?> <?php echo $category_nicename ?>" style="margin-bottom: 15px;float:left">
+                                <div class="large-4 medium-4 small-12 columns listings parent<?php echo $category_parent ?> <?php echo $category_nicename ?>" style="margin-bottom: 15px;float:left"  data-equalizer-watch>
 
                                     <div class="contact-info-box">
                                         <div class="info-box">

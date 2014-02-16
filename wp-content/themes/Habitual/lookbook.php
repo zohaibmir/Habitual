@@ -76,54 +76,55 @@ if (have_posts()) :
                     <div class="row collapse <?php echo $classname ?>" id="lookbook-slider" <?= ($count == 1) ? 'style="display:block"' : 'style="display:none"' ?>>
                         <div class="large-12 columns">
                             <ul class="lookbook-orbit" data-orbit data-options="animation:slide;
-                                animation_speed:1000;
+                                timer_speed:3000;
                                 pause_on_hover:true;
-                                animation_speed:500;
+                                animation_speed:1000;
                                 navigation_arrows:true;
                                 timer: false;
                                 swipe: true;
                                 slide_number: false; 
-                                bullets:false;">
+                                bullets:false;
+                                next_on_click:true;">
                                     <?php
                                     for ($i = 1; $i <= $num_of_images2; $i = $i + 6) {
                                         if (get('post_group_slider_image', $i) != null) {
                                             ?>
 
                                         <li> 
-                                            <ul class="small-block-grid-3 medium-block-grid-3 large-block-grid-6">
+                                            <ul class="small-block-grid-3 look-book-ul medium-block-grid-3 large-block-grid-6">
                                                 <li>
                                                     <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i); ?>">
-                                                        <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                        <!--span class="roll"><span>ELLE IN MYSTERY</span> </span-->
                                                         <img src="<?php echo get('post_group_slider_image', $i); ?>"  alt="slide 1" />
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i + 1); ?>">
-                                                        <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                        <!--span class="roll"><span>ELLE IN MYSTERY</span> </span-->
                                                         <img src="<?php echo get('post_group_slider_image', $i + 1); ?>"  alt="slide 1" />
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i + 2); ?>">
-                                                        <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                        <!--span class="roll"><span>ELLE IN MYSTERY</span> </span-->
                                                         <img src="<?php echo get('post_group_slider_image', $i + 2); ?>"  alt="slide 1" />
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i + 3); ?>">
-                                                        <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                        <!--span class="roll"><span>ELLE IN MYSTERY</span> </span-->
                                                         <img src="<?php echo get('post_group_slider_image', $i + 3); ?>"  alt="slide 1" />
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i + 4); ?>">
-                                                        <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                        <!--span class="roll"><span>ELLE IN MYSTERY</span> </span-->
                                                         <img src="<?php echo get('post_group_slider_image', $i + 4); ?>"  alt="slide 1" />
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i + 5); ?>">
-                                                        <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                        <!--span class="roll"><span>ELLE IN MYSTERY</span> </span-->
                                                         <img src="<?php echo get('post_group_slider_image', $i + 5); ?>"  alt="slide 1" />
                                                     </a>
                                                 </li>
@@ -149,4 +150,5 @@ if (have_posts()) :
     <?php
 endif;
 ?>
+
 <?php get_footer(); ?>

@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
     <head>
 
-        <title><?php wp_title('|', true, 'right'); ?></title>
+        <title><?php wp_title('|', true, 'right'); ?>Habitual</title>
         <?php wp_head(); ?>
 
         <style>

@@ -40,12 +40,11 @@ if (have_posts()) :
                                 if (get('page_group_slider_image', $i) != null) {
                                     ?>
 
-                                <li>
-                                    <img src="<?php echo get('page_group_slider_image', $i); ?>"  alt="slide 1" />
+                        <li id="home-orbit-li" style="background: url('<?php echo get('page_group_slider_image', $i); ?>')no-repeat; ">                                    
                                     <div class="orbit-caption1 home-caption">
                                         <?php echo get('page_group_slider_caption', $i); ?>
                                     </div>
-                                </li>
+                        </li>
                                 <?php
                             }
                         }
@@ -101,40 +100,40 @@ if (have_posts()) :
                                         ?>
 
                                     <li> 
-                                        <ul class="small-block-grid-3 medium-block-grid-3 large-block-grid-6">
+                                        <ul class="small-block-grid-3 portfolio-ul medium-block-grid-3 large-block-grid-6">
                                             <li>
                                                 <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i); ?>">
-                                                    <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                    <!--span class="roll"><span>ELLE IN MYSTERY</span> </span-->
                                                     <img src="<?php echo get('post_group_slider_image', $i); ?>"  alt="slide 1" />
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i + 1); ?>">
-                                                    <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                    
                                                     <img src="<?php echo get('post_group_slider_image', $i + 1); ?>"  alt="slide 1" />
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i + 2); ?>">
-                                                    <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                    
                                                     <img src="<?php echo get('post_group_slider_image', $i + 2); ?>"  alt="slide 1" />
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i + 3); ?>">
-                                                    <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                    
                                                     <img src="<?php echo get('post_group_slider_image', $i + 3); ?>"  alt="slide 1" />
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i + 4); ?>">
-                                                    <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                    
                                                     <img src="<?php echo get('post_group_slider_image', $i + 4); ?>"  alt="slide 1" />
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#" class="reveal-link" data-reveal-id="myModal" data-reveal val="<?php echo get('post_group_slider_image', $i + 5); ?>">
-                                                    <span class="roll"><span>ELLE IN MYSTERY</span> </span>
+                                                    
                                                     <img src="<?php echo get('post_group_slider_image', $i + 5); ?>"  alt="slide 1" />
                                                 </a>
                                             </li>

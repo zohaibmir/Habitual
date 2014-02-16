@@ -1,7 +1,17 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
+
 $(document).ready(function() {
+    height = $(".portfolio-ul").height();        
+    if(height < 100)
+        height = 420;
+    $(".home-sub-orbit").css("height",height);
+    height2 = $(".look-book-ul").height(); 
+    if(height2 < 100)
+        height2 = 420;
+    $(".lookbook-orbit").css("height",height2);
+    
     $('a[href*=#]').click(function() {
         
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -48,6 +58,82 @@ $(document).ready(function() {
     });
     
     
+    
+    $(".credits").hover(function () {   
+        $(".credit-img").show();
+        $(".credit-text").hide();
+    }, 
+
+ 
+
+    // ON MOUSE OUT
+
+    function () {
+        $(".credit-img").hide();
+        $(".credit-text").show();
+    }
+    );
+    
+    $(".fb-click").hover(function () {   
+        $(".fb-bottom-hover").show();
+    }, 
+
+ 
+
+    // ON MOUSE OUT
+
+    function () {
+        $(".fb-bottom-hover").hide();
+    }
+    );
+            
+            
+    //
+    
+    $(".fb1-click").hover(function () {   
+        $(".fb-blog-hover").show();
+    }, 
+
+ 
+
+    // ON MOUSE OUT
+
+    function () {
+        $(".fb-blog-hover").hide();
+    }
+    );
+    
+    //    
+    //        
+    $(".tw-click").hover(function () {   
+        $(".tw-bottom-hover").show();
+    }, 
+
+ 
+
+    // ON MOUSE OUT
+
+    function () {
+        $(".tw-bottom-hover").hide();
+    }
+    );
+        
+        
+    //
+    $(".news-letter").hover(function () {   
+        $(".news-letter-content").show();
+    }, 
+
+ 
+
+    // ON MOUSE OUT
+
+    function () {
+        $(".news-letter-content").hide();
+    }
+    );    
+    
+    // Hover Function for Multiple Line Text    
     // Hover Function for Multiple Line Text
 
 
