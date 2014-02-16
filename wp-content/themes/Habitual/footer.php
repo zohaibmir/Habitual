@@ -8,7 +8,10 @@
                 <div class="return-top"><a href="#header">RETURN TO TOP</a></div>
             </div>
             <div class="small-3 columns show-for-small-only text-right credits copyright">
-                CREDITS
+                 <span class="credit-text"> CREDITS</span>
+                <a href="http://www.grayhatweb.com/" class="credit-img" style="display: none">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/credits.png" style="position: relative;top: -10px" title="Los Angeles web design" />
+                </a>
             </div>   
         </div>
         <div class="row collapse footernav">
